@@ -20,52 +20,12 @@
           </div>
         </div>
       </nav>
-<form method="post" action="/gun">
-    <fieldset>
-      <div class="container mb-3">
-        <div class="input-group mb-3">
-          <span class="input-group-text">Fortnite Guns Type:</span>
-          <input class="form-control" id="type" name="type" type="text" required />
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text">Fortnite Gun Model:</span>
-          <input class="form-control" id="model" name="model" type="text" required />
-          <span class="input-group-text">Fortnite Gun Rarity:</span>
-          <input class="form-control" id="rarity" name="rarity" type="text" required />
-        </div>
-      </div>
-    </fieldset>
-    <input type="submit" id="submit" value="Submit" />
-  </form>
-  </body>
-  <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create Assesments needed to Make Up</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                </ul>
-          </div>
-        </div>
-      </nav>
 <form method="post" action="">
     <fieldset>
       <div class="container mb-3">
         <div class="input-group mb-3">
           <span class="input-group-text">Your Name</span>
-          <input class="form-control" id="name" name="name" type="text" required />
+          <input class="form-control" id="name" name="name" type="text" value="#" required />
         </div>
         <div class="input-group mb-3">
             <span class="input-group-text">Subject</span>
@@ -81,26 +41,35 @@
              <option value="Block7">Block 7</option>
              <option value="Block8">Block 8</option>
             </select>
+            </div>
+            <div class="input-group mb-3">
             <span class="input-group-text">Assesment Name</span>
             <input class="form-control" id="assesment" name="assesment" type="text" value="#" required />
+            </div>
+            <div class="input-group mb-3">
             <span class="input-group-text">Quiz or Test</span>
             <select class="form-select" id="type" name="type" required>
-                <option value="">Select</option>
                 <option value="Quiz">Quiz</option>
                 <option value="Test">Test</option>
             </select>
+            </div>
+            <div class="input-group mb-3">
             <span class="input-group-text">Date to Make Up</span>
             <input type="date" id="date" name="date">
+            </div>
+            <div class="input-group mb-3">
             <span class="input-group-text">Block making up in</span>
-            <option value="Section1">Block 1</option>
-            <option value="Section2">Block 2</option>
-            <option value="Section3">Block 3</option> 
-            <option value="Section4">Block 4</option>
-            <option value="Section5">Block 5</option>
-            <option value="Section6">Block 6</option>
-            <option value="Section7">Block 7</option>
-            <option value="Section8">Block 8</option>
-
+            <select class="form-select" id="section" name="section" required>
+             <option value="Section1">Block 1</option>
+             <option value="Section2">Block 2</option>
+             <option value="Section3">Block 3</option> 
+             <option value="Section4">Block 4</option>
+              <option value="Section5">Block 5</option>
+             <option value="Section6">Block 6</option>
+             <option value="Section7">Block 7</option>
+              <option value="Section8">Block 8</option>
+              </select>
+              <div class="input-group mb-3">
         </div>
       </div>
     </fieldset>
