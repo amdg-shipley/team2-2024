@@ -64,20 +64,43 @@
     <fieldset>
       <div class="container mb-3">
         <div class="input-group mb-3">
-          <span class="input-group-text">Assesment Make up Form</span>
-          <input class="form-control" id="type" name="type" type="text" required />
+          <span class="input-group-text">Your Name</span>
+          <input class="form-control" id="name" name="name" type="text" required />
         </div>
         <div class="input-group mb-3">
             <span class="input-group-text">Subject</span>
             <input class="form-control" id="subject" name="subject" type="text" value="#" required />
-            <span class="input-group-text">Block/Section</span>
-            <input class="form-control" id="section" name="section" type="text" value="#" required />
+            <span class="input-group-text">Block/Section you take this class</span>
+            <select class="form-select" id="block" name="block" required>
+             <option value="Block1">Block 1</option>
+              <option value="Block2">Block 2</option>
+              <option value="Block3">Block 3</option> 
+              <option value="Block4">Block 4</option>
+              <option value="Block5">Block 5</option>
+              <option value="Block6">Block 6</option>
+             <option value="Block7">Block 7</option>
+             <option value="Block8">Block 8</option>
+            </select>
             <span class="input-group-text">Assesment Name</span>
             <input class="form-control" id="assesment" name="assesment" type="text" value="#" required />
             <span class="input-group-text">Quiz or Test</span>
-            <input class="form-control" id="type" name="type" type="text" value="#" required />
+            <select class="form-select" id="type" name="type" required>
+                <option value="">Select</option>
+                <option value="Quiz">Quiz</option>
+                <option value="Test">Test</option>
+            </select>
             <span class="input-group-text">Date to Make Up</span>
             <input type="date" id="date" name="date">
+            <span class="input-group-text">Block making up in</span>
+            <option value="Section1">Block 1</option>
+            <option value="Section2">Block 2</option>
+            <option value="Section3">Block 3</option> 
+            <option value="Section4">Block 4</option>
+            <option value="Section5">Block 5</option>
+            <option value="Section6">Block 6</option>
+            <option value="Section7">Block 7</option>
+            <option value="Section8">Block 8</option>
+
         </div>
       </div>
     </fieldset>
