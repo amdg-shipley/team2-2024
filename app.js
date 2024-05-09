@@ -15,10 +15,10 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
 app.get("/", (req, res)=>{
-    const drinkList= db.get('testList') || [];
+    const testList= db.get('testList') || [];
 
     res.render('Demo',{
-        data:drinkList
+        data:testList
     })
 
 });
@@ -29,9 +29,9 @@ app.get('/Add', function(req, res){
 });
 
 app.post('/test', function(req, res){ 
-      const {name, subject,block}=req.body;
+      const {name,subject,block,assesment,type,date,section}=req.body;
     const testsList= db.get('testList') || [];
-    testsList.push({name,subject,block});
+    testsList.push({name,subject,block,assesment,type,date,section});
     db.set('testList', testsList)
     res.redirect('/Add');
 
@@ -41,7 +41,7 @@ app.post('/test', function(req, res){
 
         const id = req.params.id;
         const testList =db.get('testList') || [];
-        drinkList.splice(id,1);
+        testList.splice(id,1);
         db.set("testList", testList);
 
         res.redirect('/');
@@ -50,23 +50,23 @@ app.post('/test', function(req, res){
     app.get('/update/:id', (req,res, next) => {
 
         const id = req.params.id;
-        const drinkList =db.get('testList') || [];
-        const drink= drinkList[id];
+        const testListList =db.get('testList') || [];
+        const test= testList[id];
 
 
         res.render('Edit',{
             id,
-            drink
+            test
         });
 
     });
 
     app.post('/edit/:id', (req,res)=>{
         const id = req.params.id;
-        const {name,subject,block}=req.body;
+        const {name,subject,block,assesment,type,date,section}=req.body;
 
         const testList =db.get('testList') || [];
-        testList[id]= {name,subject,block};
+        testList[id]= {name,subject,block,assesment,type,date,section};
         db.set('testList', testList);
        
         res.redirect('/update/'+id);
