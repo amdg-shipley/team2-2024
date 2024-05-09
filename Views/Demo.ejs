@@ -48,9 +48,12 @@
                 <% for(var i=0; i <data.length; i++) { %>
                      <tr>
                          <th scope="row"><%= i + 1 %></th> 
+                         <td><%= data[i].subject %></td>
+                         <td><%= data[i].block %></td>
+                         <td><%= data[i].assesment %></td>
                          <td><%= data[i].type %></td>
-                         <td><%= data[i].model %></td>
-                         <td><%= data[i].rarity %></td>
+                         <td><%= data[i].date %></td>
+                         <td><%= data[i].section %></td>
                          <td><a href="/delete/<%= i %>" class="btn btn-danger">Delete</a></td>
                          <td><a href="/update/<%= i %>" class="btn btn-warning">Update</a></td>
                          </tr>
