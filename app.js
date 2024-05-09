@@ -6,7 +6,7 @@ const db= new JSONdb('db.json');
 var favicon = require('serve-favicon');
 
 app.use(favicon(path.join(__dirname, '/images','favicon.ico')))
-  
+
 // View Engine Setup 
 app.set('views', path.join(__dirname, 'views')) 
 app.set('view engine', 'ejs') 
@@ -73,8 +73,8 @@ app.post('/test', function(req, res){
 
     })
 
-  
+
 app.listen(3000, function(error){ 
-    if(error) throw error 
-    console.log("Server created Successfully") 
+    if(error) throw error 
+    console.log("Server created Successfully") 
 }); 
