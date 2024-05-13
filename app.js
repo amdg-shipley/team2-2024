@@ -50,7 +50,7 @@ app.post('/test', function(req, res){
     app.get('/update/:id', (req,res, next) => {
 
         const id = req.params.id;
-        const testListList =db.get('testList') || [];
+        const testList =db.get('testList') || [];
         const test= testList[id];
 
 
