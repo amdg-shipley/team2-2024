@@ -18,5 +18,14 @@
             "date": "2024-05-16",
             "section": "Section3"
         }
+    ],
+    "blocks": [
+        "name",
+        "subject",
+        "block",
+        "assesment",
+        "type",
+        "date",
+        "section"
     ]
 }
