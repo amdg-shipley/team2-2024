@@ -50,13 +50,16 @@ app.post('/test', function(req, res){
     app.get('/update/:id', (req,res, next) => {
 
         const id = req.params.id;
+        const blocks = db.get('blocks');
         const testList =db.get('testList') || [];
+       
         const test= testList[id];
 
 
         res.render('Edit',{
             id,
-            test
+            test, 
+            blocks
         });
 
     });

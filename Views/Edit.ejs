@@ -42,14 +42,10 @@
                     <input class="form-control" id="subject" name="subject" type="text" value="<%= test.subject %>" required />
                     <span class="input-group-text">Block/Section you take this class</span>
                     <select class="form-select" id="block" name="block" value="<%= test.block %>" required>
-                     <option value="Block1">Block 1</option>
-                      <option value="Block2">Block 2</option>
-                      <option value="Block3">Block 3</option> 
-                      <option value="Block4">Block 4</option>
-                      <option value="Block5">Block 5</option>
-                      <option value="Block6">Block 6</option>
-                     <option value="Block7">Block 7</option>
-                     <option value="Block8">Block 8</option>
+                      <% for ( var i = 0; i < blocks.length; i++ ) { %>
+                        <% var selected = ( test.block == blocks[i] ) ? "selected" : ""; %>
+                        <option value="<%=blocks[i] %>" <%=selected%>><%=blocks[i] %></option>
+                      <%}%>
                     </select>
                     </div>
                     <div class="input-group mb-3">
@@ -70,15 +66,10 @@
                     <div class="input-group mb-3">
                     <span class="input-group-text">Block making up in</span>
                     <select class="form-select" id="section" name="section" value="<%= test.subject %>" required>
-                     <option value="Section1">Block 1</option>
-                     <option value="Section2">Block 2</option>
-                     <option value="Section3">Block 3</option> 
-                     <option value="Section4">Block 4</option>
-                      <option value="Section5">Block 5</option>
-                     <option value="Section6">Block 6</option>
-                     <option value="Section7">Block 7</option>
-                      <option value="Section8">Block 8</option>
-                      </select>
+                      <% for ( var i = 0; i < blocks.length; i++ ) { %>
+                        <% var selected = ( test.block == blocks[i] ) ? "selected" : ""; %>
+                        <option value="<%=blocks[i] %>" <%=selected%>><%=blocks[i] %></option>
+                      <%}%>
                       <div class="input-group mb-3">
                 </div>
                 </div>
