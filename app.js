@@ -56,7 +56,7 @@ app.post('/test', function(req, res){
 
         res.render('Edit',{
             id,
-            test
+            test,
         });
 
     });
