@@ -25,49 +25,49 @@
       <div class="container mb-3">
         <div class="input-group mb-3">
           <span class="input-group-text">Your Name</span>
-          <input class="form-control" id="name" name="name" type="text" value="" required />
+          <input class="form-control" id="name" name="name" type="text" value="<%= test.name %>" required />
         </div>
         <div class="input-group mb-3">
             <span class="input-group-text">Subject</span>
-            <input class="form-control" id="subject" name="subject" type="text" value="" required />
+            <input class="form-control" id="subject" name="subject" type="text" value="<%= test.subject %>" required />
             <span class="input-group-text">Block/Section you take this class</span>
-            <select class="form-select" id="block" name="block" required>
-             <option value="Block1">Block 1</option>
-              <option value="Block2">Block 2</option>
-              <option value="Block3">Block 3</option> 
-              <option value="Block4">Block 4</option>
-              <option value="Block5">Block 5</option>
-              <option value="Block6">Block 6</option>
-             <option value="Block7">Block 7</option>
-             <option value="Block8">Block 8</option>
+            <select class="form-select" id="block" name="block" value="<%= test.block %>"required>
+             <option value="Block 1">Block 1</option>
+              <option value="Block 2">Block 2</option>
+              <option value="Block 3">Block 3</option> 
+              <option value="Block 4">Block 4</option>
+              <option value="Block 5">Block 5</option>
+              <option value="Block 6">Block 6</option>
+             <option value="Block 7">Block 7</option>
+             <option value="Block 8">Block 8</option>
             </select>
             </div>
             <div class="input-group mb-3">
             <span class="input-group-text">Assesment Name</span>
-            <input class="form-control" id="assesment" name="assesment" type="text" value="" required />
+            <input class="form-control" id="assesment" name="assesment" type="text" value="<%= test.value %>" required />
             </div>
             <div class="input-group mb-3">
             <span class="input-group-text">Quiz or Test</span>
-            <select class="form-select" id="type" name="type" required>
+            <select class="form-select" id="type" name="type" value="<%= test.type %>" required>
                 <option value="Quiz">Quiz</option>
                 <option value="Test">Test</option>
             </select>
             </div>
             <div class="input-group mb-3">
             <span class="input-group-text">Date to Make Up</span>
-            <input type="date" id="date" name="date">
+            <input type="date" id="date" name="date" value="<%= test.date %>">
             </div>
             <div class="input-group mb-3">
             <span class="input-group-text">Block making up in</span>
-            <select class="form-select" id="section" name="section" required>
-             <option value="Section1">Block 1</option>
-             <option value="Section2">Block 2</option>
-             <option value="Section3">Block 3</option> 
-             <option value="Section4">Block 4</option>
-              <option value="Section5">Block 5</option>
-             <option value="Section6">Block 6</option>
-             <option value="Section7">Block 7</option>
-              <option value="Section8">Block 8</option>
+            <select class="form-select" id="section" name="<%= test.section %>"  value="section "required>
+             <option value="Section 1">Block 1</option>
+             <option value="Section 2">Block 2</option>
+             <option value="Section 3">Block 3</option> 
+             <option value="Section 4">Block 4</option>
+              <option value="Section 5">Block 5</option>
+             <option value="Section 6">Block 6</option>
+             <option value="Section 7">Block 7</option>
+              <option value="Section 8">Block 8</option>
               </select>
               <div class="input-group mb-3">
         </div>
