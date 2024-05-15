@@ -25,13 +25,13 @@
       <div class="container mb-3">
         <div class="input-group mb-3">
           <span class="input-group-text">Your Name</span>
-          <input class="form-control" id="name" name="name" type="text" value="name" required />
+          <input class="form-control" id="name" name="name" type="text" value="<%= test.name %>" required />
         </div>
         <div class="input-group mb-3">
             <span class="input-group-text">Subject</span>
-            <input class="form-control" id="subject" name="subject" type="text" value="subject" required />
+            <input class="form-control" id="subject" name="subject" type="text" value="<%= test.subject %>" required />
             <span class="input-group-text">Block/Section you take this class</span>
-            <select class="form-select" id="block" name="block" value="block"required>
+            <select class="form-select" id="block" name="block" value="<%= test.block %>"required>
              <option value="Block 1">Block 1</option>
               <option value="Block 2">Block 2</option>
               <option value="Block 3">Block 3</option> 
@@ -44,22 +44,22 @@
             </div>
             <div class="input-group mb-3">
             <span class="input-group-text">Assesment Name</span>
-            <input class="form-control" id="assesment" name="assesment" type="text" value="assesment" required />
+            <input class="form-control" id="assesment" name="assesment" type="text" value="<%= test.value %>" required />
             </div>
             <div class="input-group mb-3">
             <span class="input-group-text">Quiz or Test</span>
-            <select class="form-select" id="type" name="type" value="type" required>
+            <select class="form-select" id="type" name="type" value="<%= test.type %>" required>
                 <option value="Quiz">Quiz</option>
                 <option value="Test">Test</option>
             </select>
             </div>
             <div class="input-group mb-3">
             <span class="input-group-text">Date to Make Up</span>
-            <input type="date" id="date" name="date" value="date">
+            <input type="date" id="date" name="date" value="<%= test.date %>">
             </div>
             <div class="input-group mb-3">
             <span class="input-group-text">Block making up in</span>
-            <select class="form-select" id="section" name="section"  value="section "required>
+            <select class="form-select" id="section" name="<%= test.section %>"  value="section "required>
              <option value="Section 1">Block 1</option>
              <option value="Section 2">Block 2</option>
              <option value="Section 3">Block 3</option> 
